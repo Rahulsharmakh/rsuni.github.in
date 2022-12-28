@@ -1,0 +1,293 @@
+* {
+    padding: 0%;
+    top: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a {
+    color: white;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    padding: 15px 18px;
+    text-align: center;
+    float: left;
+}
+
+.topnav a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: rgb(183, 183, 183);
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media only screen and (max-width:500px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive.icon {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+
+/* header */
+
+#header {
+    background-color: yellow;
+}
+
+#header {
+    font-size: 50px;
+}
+
+#header .logo1 {
+    width: 250px;
+    height: 250px;
+}
+
+#header .hdiv1 {
+    text-align: center;
+}
+
+.h1 {
+    color: red;
+    font-size: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bt {
+    text-align: center;
+    color: white;
+}
+
+.sc {
+    color: blue
+}
+
+.bt1 {
+    height: 70px;
+    width: 150px;
+    background-color: coral;
+    color: white;
+    font-size: 20px;
+}
+
+.bt2 {
+    height: 70px;
+    width: 150px;
+    background-color: forestgreen;
+    color: white;
+    font-size: 20px;
+}
+
+.bt3 {
+    height: 70px;
+    width: 150px;
+    background-color: firebrick;
+    color: white;
+    font-size: 20px;
+}
+
+.bt4 {
+    height: 70px;
+    width: 150px;
+    background-color: violet;
+    color: white;
+    font-size: 20px;
+}
+
+.bta1 {
+    color: white;
+}
+
+.bta2 {
+    color: white;
+}
+
+.bta3 {
+    color: white;
+}
+
+.bta4 {
+    color: white;
+}
+
+#department #d1 {
+    background-color: green;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+    border: solid;
+}
+
+#department a {
+    color: white;
+    text-decoration: none;
+}
+
+#department #d2 {
+    background-color: orangered;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#department #d3 {
+    background-color: palevioletred;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#department #d4 {
+    background-color: peru;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#department #d5 {
+    background-color: purple;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#department #d6 {
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#department #d7 {
+    background-color: gray;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+#department .dsp {
+    color: black;
+    font-size: 30px;
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#stucor .sc {
+    text-align: center;
+    font-size: 30px;
+}
+
+@media only screen and (max-width:500px) {
+    #header .logo1 {
+        height: 100%;
+        width: 100%;
+    }
+    #header .hdiv1 {
+        text-align: center;
+    }
+    .h1 {
+        font-size: 20px;
+    }
+    #department #d1 {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #department #d2 {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #department #d3 {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #department #d4 {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #department #d5 {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #department #d6 {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    #department #d7 {
+        font-size: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+.ct {
+    text-align: center;
+    font-size: 25px;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#home {
+    margin-left: 20px;
+    margin-right: 5px;
+}

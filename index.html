@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <title>Rahul university</title>
+    <link rel="stylesheet" href="uni1css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header">
+        <img src="logo.png" class="logo1" alt="logo">
+        <div class="hdiv1">Rahul University</div>
+    </div>
+    <div id="myTopnav" class="topnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#department">Department</a>
+        <a href="#stucor">Student Corner</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <fieldset><br><br>
+        <div id="home">
+            <ul>
+                <li>
+                    <div class="h1">Rahul university was established in 2009 by rahul.</div>
+                </li><br>
+                <li>
+                    <div class="h1">This university rank is number 2 in state and rank 7 in india.</div>
+                </li><br>
+                <li>
+                    <div class="h1">Dr. shukla main allumni of this university.</div>
+                </li><br>
+                <li>
+                    <div class="h1">Rahul university provides 7 departments or colleges for many streams or courses.</div>
+                </li><br>
+                <li>
+                    <div class="h1">Rahul university has limited seats for different courses so most qualified student gets admission by merit.</div>
+                </li><br>
+                <li>
+                    <div class="h1">Each department is head and qualified faculties for that.</div>
+                </li><br>
+                <li>
+                    <div class="h1">Exam and admission notice gives the particullar department admission protal.</div>
+                </li><br>
+            </ul>
+        </div><br><br>
+    </fieldset>
+    <fieldset><br>
+        <div id="department">
+            <div class="dsp" text-align="center">DEPARTMENT</div><br>
+            <div id="d1">
+                <a href="indexrcca.html"> Rahul college of computer application</a>
+            </div><br>
+            <div id="d2">
+                <a href="indexrcc.html">Rahul college of commerce</a>
+            </div><br>
+            <div id="d3"><a href="indexrca.html">Rahul college of arts</a></div><br>
+            <div id="d4"><a href="indexrcit.html">Rahul college of information technology</a></div><br>
+            <div id="d5"><a href="indexrct.html">Rahul college of technology</a></div><br>
+            <div id="d6"><a href="indexrcnm.html">Rahul college of nursing</a></div><br>
+            <div id="d7"><a href="indexrcbm.html">Rahul college of bussiness administration</a></div>
+        </div><br><br>
+
+    </fieldset>
+    <fieldset><br>
+        <div id="stucor">
+            <div class="sc"><u>STUDENT CORNER</u></div><br><br>
+            <div class="bt">
+                <button class="bt1"><a href="indexadmission.html" class="bta1">ADMISSION</a></button><br><br>
+                <button class="bt2"><a href="indexexam.html" class="bta2">EXAMINATION</a></button><br><br>
+                <button class="bt3"><a href="indexplacement.html" class="bta3">PLACEMENT</a></button><br><br>
+                <button class="bt4"><a href="indexav.html" class="bta4">ACADMIC <br>VIEW</a></button><br><br>
+            </div>
+        </div>
+    </fieldset>
+    <div id="footer">
+        <div class="ct" id="contact"><u> Contact</u></div>
+        <div class="ct"><br> Rahul university ,<br><br> Ahmedabad. <br>
+            <hr>
+            <sup>&copy;</sup> By Rahul sharma <br><br> This is project web
+        </div>
+    </div>
+</body>
+
+</html>

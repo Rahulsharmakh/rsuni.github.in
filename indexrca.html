@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        rcca
+    </title>
+    <meta name="viewport" content="width=device-width,intial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav")
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <style>
+        * {
+            padding: 0%;
+            top: 0%;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #header {
+            background-color: yellow;
+        }
+        
+        #header {
+            font-size: 50px;
+        }
+        
+        #header .logo1 {
+            width: 250px;
+            height: 250px;
+        }
+        
+        #header .hdiv1 {
+            text-align: center;
+        }
+        
+        #show {
+            background-color: palevioletred;
+            font-size: 35px;
+            color: white;
+            text-align: center;
+        }
+        
+        .h1 {
+            color: red;
+            font-size: 35px;
+        }
+        
+        #show {
+            background-color: palevioletred;
+            font-size: 35px;
+            color: white;
+            text-align: center;
+        }
+        
+        .h1 {
+            color: red;
+            font-size: 35px;
+        }
+        
+        #l1 li {
+            list-style: circle;
+            color: palevioletred;
+            font-size: 20px;
+        }
+        
+        #show {
+            background-color: palevioletred;
+            font-size: 35px;
+            color: white;
+            text-align: center;
+        }
+        
+        .h1 {
+            color: red;
+            font-size: 35px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #t1 {
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #t1 td {
+            align-items: center;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #t1 th {
+            align-items: center;
+            font-size: 25px;
+        }
+        
+        .info1 {
+            text-align: center;
+            text-decoration: underline;
+            color: blue;
+            font-size: 28px;
+        }
+        
+        #ad {
+            text-align: center;
+            text-decoration: underline;
+            color: blue;
+            font-size: 30px;
+        }
+        
+        form {
+            font-size: 15px;
+            margin-left: 5px;
+        }
+        
+        #sylabus {
+            align-items: center;
+        }
+        
+        .ct {
+            text-align: center;
+            font-size: 25px;
+        }
+        
+        #footer {
+            background-color: black;
+            color: white;
+        }
+        
+        .plc {
+            text-align: center;
+            text-decoration: underline;
+            color: blue;
+            font-size: 35px;
+        }
+        
+        span {
+            margin-left: 0;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: black;
+        }
+        
+        .topnav a {
+            color: white;
+            padding: 15px 18px;
+            text-decoration: none;
+            font-size: 20px;
+            float: left;
+            text-align: center;
+        }
+        
+        .topnav a.icon {
+            display: none;
+        }
+        
+        .topnav a:hover {
+            background-color: whitesmoke;
+            color: black
+        }
+        
+        .topnav a.active {
+            background-color: aqua;
+            color: black;
+        }
+        
+        .bt {
+            text-align: center;
+            color: white;
+        }
+        
+        .bt1 {
+            height: 70px;
+            width: 150px;
+            background-color: coral;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .bt2 {
+            height: 70px;
+            width: 150px;
+            background-color: forestgreen;
+            color: white;
+            font-size: 20px;
+        }
+        
+        #admission ul {
+            margin-left: 20px;
+            margin-right: 10px;
+        }
+        
+        #info {
+            margin-left: 20px;
+            margin-right: 5px;
+        }
+        
+        .bt3 {
+            height: 70px;
+            width: 150px;
+            background-color: firebrick;
+            color: white;
+            font-size: 20px;
+        }
+        
+        .bta1 {
+            color: white;
+        }
+        
+        .bta2 {
+            color: white;
+        }
+        
+        .bta3 {
+            color: white;
+        }
+        
+        .bta4 {
+            color: white;
+        }
+        
+        @media only screen and (max-width:500px) {
+            #header .logo1 {
+                height: 100%;
+                width: 100%;
+            }
+            #header .hdiv1 {
+                text-align: center;
+            }
+            .h1 {
+                font-size: 20px;
+            }
+            #show {
+                background-color: palevioletred;
+                font-size: 30px;
+                color: white;
+                text-align: center;
+            }
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+            .topnav.responsive a {
+                float: none;
+                font-size: 20px;
+                display: block;
+                text-align: left;
+            }
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive.icon {
+                position: absolute;
+                left: 0;
+                right: 0;
+            }
+            .topnav a.icon {
+                display: block;
+                float: right;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <img src="logo.png" class="logo1" alt="logo">
+        <div class="hdiv1">Rahul University</div>
+    </div>
+
+    <div id="show">
+        Rahul college of Arts
+    </div>
+    <div id="menu">
+        <div id="myTopnav" class="topnav">
+            <a href="#info" class="active">Info</a>
+            <a href="#admission">Admission</a>
+            <a href="#exam">Exam</a>
+            <a href="#footer">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a>
+        </div>
+    </div>
+    <div id="info">
+        <div class="info1">Info</div>
+        <span>
+            <ul id="l1">
+                <li>Rahul college of arts provides three 3 cources.</li><br>
+                <li>One bahelor and master cources is available in this college and also bachlor of education provide.</li><br>
+                <li>For master of arts program 75% marks required in last year of BA of recognized college.</li><br>
+                <li>For BA program 75% percentage required in recognized education board.</li><br>
+            </ul>
+            <table id="t1" border="1" >
+                <tr>
+                    <th>Courses</th>
+                    <th>Duration</th>
+                    <th>Semesters</th>
+                </tr>
+                
+                <tr>
+                    <td>BA</td>
+                    <td>3 Years</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>MA</td>
+                    <td>2 Years</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>
+                        BEd
+                    </td>
+                    <td>
+                        2 Years
+                    </td>
+                    <td>
+                        4
+                    </td>
+                </tr>
+            </table><br><br>
+            <table id="t1" border="1" >
+                <tr>
+                    <th>
+                        Courses
+                    </th>
+                    <th>
+                        Fees 
+                    </th>
+                </tr>
+                <tr>
+                    <td>BA</td>
+                    <td>10000/- Per sem</td>
+                </tr>
+                <tr>
+                    <td>
+                        MA
+                    </td>
+                    <td>
+                        15000/- Per sem
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        BED
+                    </td>
+                    <td>
+                        20000/- Per sem
+                    </td>
+                </tr>
+            </table><br><br>
+            <table id="t1" border="1">
+                <tr>
+                    <th>
+                        Courses
+                    </th>
+                    <th>
+                        Intake
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        BA
+                    </td>
+                    <td>
+                        250
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        MA
+                    </td>
+                    <td>
+                        300
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        BED
+                    </td>
+                    <td>
+                        300
+                    </td>
+                </tr>
+            </table>
+        </span>
+    </div><br>
+    <div id="sylabus">
+
+        <table id="t1" border="1">
+            <tr>
+                <th>
+                    Courses
+                </th>
+                <th>
+                    Detail
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    BA
+                </td>
+                <td>
+                    <a href="#">Download </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MA
+                </td>
+                <td>
+                    <a href="#"> Download </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    BED
+                </td>
+                <td>
+                    <a href="#">Download</a>
+                </td>
+            </tr>
+        </table><br><br>
+        <table id="t1" border="1">
+            <tr>
+                <th>
+                    Courses
+                </th>
+                <th>
+                    Syllabus
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    BA
+                </td>
+                <td>
+                    <a href="#"> Download </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MA
+                </td>
+                <td>
+                    <a href="#"> Download </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    BED
+                </td>
+                <td>
+                    <a href="#">Download</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="admission"><br>
+        <a name="admission1"></a>
+        <div id="ad">ADMISSION</div><br>
+        <ul id="l1"><br>
+            <li>If you want to take admission in that college then fill up this form.</li><br>
+            <li>After fill up this form rahul college of arts will contact you .</li><br>
+
+            <li>College will send a link to fill up application form after this form successfully filled up.</li><br>
+            <li>In short term merit portal and application portal will show in home page.</li>
+        </ul>
+        <div>
+            <fieldset>
+                <form action="sfr.html">
+                    <table>
+                        <tr>
+                            <td>
+                                <br> Full name :
+                            </td>
+                            <td>
+                                <br><input type="text" id="fname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br> Mobile no. :
+                            </td>
+                            <td>
+                                <br><input type="tel" pattern="[0-9]{10}" id="mob" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br> E-mail :
+                            </td>
+                            <td>
+                                <br><input type="email" id="mail" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br> Institute :
+                            </td>
+                            <td>
+                                <br><select name="Rahul college of arts" id="rcaa" disabled>
+                                <option value="Rahul college of arts" >03-Rahul college of arts</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <br>Course
+                            </td>
+                            <td>
+                                <br>
+                                <select name="course" id="course">
+                                    <option value="ba">BA</option>
+                                    <option value="ma">MA</option>
+                                    <option value="bed">BED</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1">
+                                <br><input type="submit" value="Inquiry now">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </fieldset>
+        </div>
+    </div>
+    <div id="exam">
+        <a name="exam1"></a>
+        <div class="info1">EXAM</div><br>
+        <div class="bt">
+            <button class="bt1"><a href="indexrcaes.html" class="bta1">EXAM SCHEDULE</a></button><br><br>
+            <button class="bt2"><a href="indexrcacl.html" class="bta2">CANDIDATE LIST</a></button><br><br>
+            <button class="bt3"><a href="indexrcaresult.html" class="bta3">RESULT</a></button><br><br>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="ct"><u> Contact</u></div><br>
+        <div class="ct">Rahul college of arts ,<br></div>
+        <div class="ct"><br> Rahul university ,<br><br> Ahmedabad. <br>
+            <hr>
+            <sup>&copy;</sup> By Rahul sharma <br><br> This is project web.
+        </div>
+    </div>
+</body>
+
+</html>
